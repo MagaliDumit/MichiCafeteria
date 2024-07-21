@@ -1,0 +1,223 @@
+/* Estilos globales */
+:root {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87); /* Color de texto por defecto */
+  background-color: #f8f0e3; /* Fondo beige claro */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f0e3; /* Fondo beige claro */
+  color: #333; /* Color de texto */
+}
+
+a {
+  font-weight: 500;
+  color: #8b4513; /* Marrón */
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #d2b48c; /* Marrón claro */
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #8b4513; /* Marrón */
+  color: #fffbe7; /* Amarillo claro */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fffbe7; /* Amarillo claro */
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #d2b48c; /* Marrón claro */
+  color: #8b4513; /* Marrón */
+}
+
+/* Estilos para el main */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Estilos para las secciones */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  border-bottom: 2px solid #8b4513; /* Marrón */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #8b4513; /* Marrón */
+}
+
+section p {
+  line-height: 1.6;
+}
+
+/* Estilos para centrar el iframe */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilos para Nosotros */
+#nosotros {
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para el menú */
+#div-menu {
+  border: 2px solid #8b4513; /* Marrón */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fffbe7; /* Amarillo claro */
+}
+
+#menu h3 {
+  margin-top: 0;
+}
+
+#menu input[type="number"] {
+  border: 2px solid #8b4513; /* Marrón */
+  border-radius: 5px;
+  width: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+/* Estilos para la galería */
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fffbe7; /* Amarillo claro */
+  margin: 10px;
+  width: calc(33.333% - 20px); /* Tres elementos por fila con márgenes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes se ajusten y mantengan la proporción */
+}
+
+.gallery-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #8b4513; /* Marrón */
+}
+
+.gallery-item p {
+  padding: 0 10px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Estilos para el contacto */
+#contacto {
+  align-items: center;
+  text-align: center;
+}
+
+#contact p {
+  margin: 10px 0;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #8b4513; /* Marrón */
+  color: #fffbe7; /* Amarillo claro */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #d2b48c; /* Marrón claro */
+}
+
+#lista-footer {
+  list-style: none;
+  font-weight: bold;
+}
