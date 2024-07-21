@@ -68,7 +68,6 @@ const MainContent = () => {
           Nuestra filosofía se centra en la felicidad y el bienestar de nuestros clientes y felinos. Cada mes, organizamos
           eventos temáticos votados por nuestros clientes, creando una experiencia única y divertida para todos.
         </p>
-        <iframe width="560" height="315" src="https://youtube.com/shorts/lFOR-uqRG80?si=jH4VfUzWKfOLKkoQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </section>
 
       <section id="menu">
