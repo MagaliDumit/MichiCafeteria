@@ -68,6 +68,11 @@ const MainContent = () => {
           Nuestra filosofía se centra en la felicidad y el bienestar de nuestros clientes y felinos. Cada mes, organizamos
           eventos temáticos votados por nuestros clientes, creando una experiencia única y divertida para todos.
         </p>
+        <p>
+          La combinación perfecta entre suavidad y crocantes de nuestras delicias gracias a la colaboración de la Michi Panadería de nuestro travieso gatito detonao. 
+        </p>
+        <iframe width="500" height="700" src="https://youtube.com/shorts/lFOR-uqRG80?si=jH4VfUzWKfOLKkoQ" title="YouTube short player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
       </section>
 
       <section id="menu">
@@ -103,7 +108,7 @@ const MainContent = () => {
         <p>Precio Total: ${totalPrice.toFixed(2)}</p>
       </section>
 
-      <section id="galeria">
+      <section id="gallery">
         <h2>Galería</h2>
         <Gallery/>
       </section>
