@@ -29,6 +29,7 @@ src/
 │   ├── MainContent.jsx
 │   ├── MenuItem.jsx
 |   ├── MichiEvents.jsx
+|   ├── YouTubePlayer.jsx
 ├── App.css
 ├── App.jsx
 ├── index.jsx
@@ -43,7 +44,8 @@ src/
 - **MenuItem.jsx**: Componente reutilizable para mostrar los ítems del menú con nombre, descripción y precio.
 - **Gallery.jsx**: Muestra una galería de imágenes obtenidas desde la API pública proporcionada.
 - **MichiEvents.jsx**: los clientes seleccionan el próximo evento que se realizará en la MichiCafetería. 
-
+- **YouTubePlayer.jsx**: Permite ver el video de youtube.
+  
 ### 3. Funcionamiento del Proyecto
 
 #### 3.1 Instalación
