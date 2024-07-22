@@ -1,8 +1,4 @@
-Aquí tienes un informe detallado sobre el proyecto de "La MichiCafetería":
-
----
-
-## Informe del Proyecto: La MichiCafetería
+## La MichiCafetería
 
 ### 1. Introducción
 
