@@ -60,6 +60,7 @@ Para ejecutar el proyecto en tu entorno local, sigue estos pasos:
 2. **Instala las Dependencias**:
    Navega al directorio del proyecto y ejecuta:
    ```bash
+   npm install react-youtube
    npm install
    ```
 
