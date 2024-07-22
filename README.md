@@ -32,6 +32,7 @@ src/
 │   ├── Header.jsx
 │   ├── MainContent.jsx
 │   ├── MenuItem.jsx
+|   ├── MichiEvents.jsx
 ├── App.css
 ├── App.jsx
 ├── index.jsx
@@ -45,6 +46,7 @@ src/
 - **Footer.jsx**: Muestra la información del equipo de desarrollo y otros detalles.
 - **MenuItem.jsx**: Componente reutilizable para mostrar los ítems del menú con nombre, descripción y precio.
 - **Gallery.jsx**: Muestra una galería de imágenes obtenidas desde la API pública proporcionada.
+- **MichiEvents.jsx**: los clientes seleccionan el próximo evento que se realizará en la MichiCafetería. 
 
 ### 3. Funcionamiento del Proyecto
 
@@ -73,11 +75,12 @@ Para ejecutar el proyecto en tu entorno local, sigue estos pasos:
 
 1. **Página Principal**:
    - **Sobre Nosotros**: Información sobre la cafetería, su historia y filosofía.
+   - **Fotos**: Son las fotos que nos envian nuestros clientes. 
    - **Menú**: Muestra el menú de la cafetería con descripciones y precios. Los usuarios pueden seleccionar ítems y calcular el precio total.
    - **Galería**: Muestra una galería de imágenes de diferentes tipos de café obtenidas mediante una API pública.
    - **Contacto**: Información de contacto y un mapa interactivo con la ubicación de la cafetería.
-
-2. **Navegación**:
+   - **Eventos**: los clientes seleccionan el próximo evento que se realizará en la MichiCafetería. 
+3. **Navegación**:
    - El menú de navegación en el **Header** permite acceder a las distintas secciones de la página.
    - Cada sección del sitio está claramente delineada y accesible desde el menú de navegación.
 
