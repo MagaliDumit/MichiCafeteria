@@ -6,7 +6,8 @@ const Header = () => {
   useEffect(() => {
     fetch('https://api.sampleapis.com/coffee/hot')
       .then(response => response.json())
-      .then(data => setMenuItems(data));
+      .then(data => setMenuItems(data))
+      .catch(error => console.error('Error fetching menu items:', error));
   }, []);
 
   return (
@@ -15,16 +16,18 @@ const Header = () => {
         <img src="/logo.jpg" alt="Logo de La MichiCafetería" className="logo" />
       </div>
       <div className="nombre">
-        <h1> MichiCafetería</h1>
+        <h1>MichiCafetería</h1>
       </div>
+      <nav aria-label="Main Navigation">
         <ul>
-          <nav>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="#menu">Menú</a></li>
-            <li><a href="#gallery">Galería</a></li>
-            <li><a href="#mapa">Ubicación</a></li>
-          </nav>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#fotos">Fotos</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#evento">Eventos</a></li>
+          <li><a href="#mapa">Ubicación</a></li>
         </ul>
+      </nav>
     </header>
   );
 };
