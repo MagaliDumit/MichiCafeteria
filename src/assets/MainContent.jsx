@@ -2,19 +2,13 @@ import React, { useState, useEffect } from 'react';
 import MenuItem from './MenuItem';
 import Gallery from './Gallery';
 import MichiEvents from './MichiEvents';
+import YouTubePlayer from './YouTubePlayer';
 
 const MainContent = () => {
   const [menuItems, setMenuItems] = useState([]); 
   const [selectedItems, setSelectedItems] = useState({});
   const [totalPrice, setTotalPrice] = useState(0);
   
-  const images = [
-    '/imagen-0.jpg',
-    '/imagen-1.jpg',
-    '/imagen-2.jpg',
-    '/imagen-3.jpg',
-    '/imagen-4.png'
-  ];
 
   useEffect(() => {
     const items = [
@@ -40,7 +34,7 @@ const MainContent = () => {
       { id: 20, name: 'Lemonad', description: 'Limón exprimido con azucar y agua.', price: 250 , type: 'coffee' },
       
       //Delicias
-      { id: 21, name: 'Cupcake de Gatito Negro', description: 'Irresistible cupcake decorado con detalles de gatito negro.', price: 2000, type: 'food', image: '/cupcake.png' },
+      { id: 21, name: 'Cupcake de Gatito Negro', description: 'Irresistible cupcake decorado con detalles de gatito negro.', price: 2000, type: 'food', image: '/cupcake.jpeg' },
       { id: 22, name: 'Michipancito del Gatito Detonao', description: 'Combinación perfecta entre suavidad y crujiente.', price: 2000, type: 'food', image: '/pancito.jpeg' },
       { id: 23, name: 'Galletitas de Gatito Calico', description: 'Encanto de nuestras galletitas de gatito Calico.', price: 2000, type: 'food', image: '/galletitas.jpeg' },
    
@@ -81,7 +75,7 @@ const MainContent = () => {
           La combinación perfecta entre suavidad y crocantes de nuestras delicias gracias a la colaboración de la Michi Panadería de nuestro travieso gatito detonao. 
         </p>
         
-        <iframe width="500" height="700" src="https://youtube.com/shorts/lFOR-uqRG80?si=jH4VfUzWKfOLKkoQ" title="YouTube short player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <YouTubePlayer videoId="lFOR-uqRG80?si=jH4VfUzWKfOLKkoQ" />
 
       </section>
 
@@ -157,20 +151,21 @@ const MainContent = () => {
 
 
       <section id="mapa">
-      <h2>Ubicación de la MichiCafetería</h2>
-      <p><strong>Dirección:</strong> Arturo Jauretche 953, B1686FCA Gran Buenos Aires, Provincia de Buenos Aires</p>
-      <p><strong>Teléfono:</strong> 011 4452-xxxx</p>
-      <p><strong>Horario:</strong> Abre a las 9 a.m. Cierra a las 9:30 p.m.</p>
-      <iframe
-        src="https://maps.app.goo.gl/KhD22pzfwDTN6tek9"
-        width="100%"
-        height="450"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        title="Google Maps"
-      ></iframe>
-    </section>
+        <h2>Ubicación de la MichiCafetería</h2>
+        <p><strong>Dirección:</strong> Arturo Jauretche 953, B1686FCA Gran Buenos Aires, Provincia de Buenos Aires</p>
+        <p><strong>Teléfono:</strong> 011 4452-xxxx</p>
+        <p><strong>Horario:</strong> Abre a las 9 a.m. Cierra a las 9:30 p.m.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.62321664348!2d-58.63406142491607!3d-34.588399172959804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb947765c90c1%3A0xd0f3cfefcfa8c34a!2zQ2Fmw6kgTWFydMOtbmV6!5e0!3m2!1ses-419!2sar!4v1721616433991!5m2!1ses-419!2sar"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Google Maps"
+        ></iframe>
+      </section>
 
     </main>
   );
