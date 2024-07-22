@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import MenuItem from './MenuItem';
 import Gallery from './Gallery';
+import MichiEvents from './MichiEvents';
 
 const MainContent = () => {
   const [menuItems, setMenuItems] = useState([]); 
   const [selectedItems, setSelectedItems] = useState({});
   const [totalPrice, setTotalPrice] = useState(0);
+  
+  const images = [
+    '/imagen-0.jpg',
+    '/imagen-1.jpg',
+    '/imagen-2.jpg',
+    '/imagen-3.jpg',
+    '/imagen-4.png'
+  ];
 
   useEffect(() => {
     const items = [
@@ -58,7 +67,7 @@ const MainContent = () => {
   return (
     <main>
       <section id="nosotros">
-        <h2>Sobre Nosotros</h2>
+        <h2><strong>Sobre Nosotros</strong></h2>
         <p>
           La Michicafetería fue creada en 2024 como un lugar de encuentro para los amantes de los gatos y el buen café.
           Nuestro objetivo es proporcionar un ambiente acogedor donde puedas disfrutar de deliciosas bebidas y comidas
@@ -66,17 +75,45 @@ const MainContent = () => {
         </p>
         <p>
           Nuestra filosofía se centra en la felicidad y el bienestar de nuestros clientes y felinos. Cada mes, organizamos
-          eventos temáticos votados por nuestros clientes, creando una experiencia única y divertida para todos.
+          eventos temáticos votados por nuestros michi-clientes, creando una experiencia única y divertida para todos.
         </p>
         <p>
           La combinación perfecta entre suavidad y crocantes de nuestras delicias gracias a la colaboración de la Michi Panadería de nuestro travieso gatito detonao. 
         </p>
+        
         <iframe width="500" height="700" src="https://youtube.com/shorts/lFOR-uqRG80?si=jH4VfUzWKfOLKkoQ" title="YouTube short player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       </section>
 
+      <section id="fotos">
+        <h2><strong>Fotos Michitásticas</strong></h2>
+        <div className="image-gallery">
+          <div>
+            <img src="/imagen-0.jpg" alt="La Michi Fachada" style={{ width: '100%', height: 'auto', maxWidth: '600px' }} />
+            <li>La Michi Fachada</li>
+          </div>
+          <div>
+            <img src="/imagen-1.jpg" alt="Michinterior" style={{ width: '100%', height: 'auto', maxWidth: '600px' }} />
+            <li>Michinterior</li>
+          </div>
+          <div>
+            <img src="/imagen-2.jpg" alt="Foto de Michi negro descansando" style={{ width: '100%', height: 'auto', maxWidth: '600px' }} />
+            <li>Foto de Michi negro descansando</li>
+          </div>
+          <div>
+            <img src="/imagen-3.jpg" alt="La Michi Barista" style={{ width: '100%', height: 'auto', maxWidth: '600px' }} />
+            <li>La Michi Barista</li>
+          </div>
+          <div>
+            <img src="/imagen-4.png" alt="Próximo diseño de La Michi Fachada, diseño ganador del concurso MichiArquitecto" style={{ width: '100%', height: 'auto', maxWidth: '600px' }} />
+            <li>Próximo diseño de La Michi Fachada, ganador del concurso MichiDiseño</li>
+          </div>
+        </div>
+      </section>
+
+
       <section id="menu">
-        <h2>Menú de Cafés</h2>
+        <h2><strong>Menú de Cafés</strong></h2>
         <p>
           En la cafetería "La Michicafetería" puedes disfrutar de las siguientes opciones de café.
         </p>
@@ -84,7 +121,7 @@ const MainContent = () => {
           <MenuItem key={item.id} item={item} onSelect={handleSelectItem} />
         ))}
 
-        <h2>Menú de Delicias</h2>
+        <h2><strong>Menú de Delicias</strong></h2>
         <p>
           ¡Espero que disfrutes de estas deliciosas opciones con temática felina en "La Michicafetería"!
         </p>
@@ -105,16 +142,22 @@ const MainContent = () => {
         <div>
           <button onClick={calculateTotal}>Calcular Precio Total</button>
         </div>
-        <p>Precio Total: ${totalPrice.toFixed(2)}</p>
+        <p><strong>Precio Total:</strong> ${totalPrice.toFixed(2)}</p>
       </section>
 
       <section id="gallery">
-        <h2>Galería</h2>
+        <h2><strong>Galería</strong> </h2>
         <Gallery/>
       </section>
 
+      <section id="evento">
+        <h2><strong>Michi Eventos</strong> </h2>
+        <MichiEvents/>
+      </section>
+
+
       <section id="mapa">
-      <h2>Ubicación de La Michicafetería</h2>
+      <h2>Ubicación de la MichiCafetería</h2>
       <p><strong>Dirección:</strong> Arturo Jauretche 953, B1686FCA Gran Buenos Aires, Provincia de Buenos Aires</p>
       <p><strong>Teléfono:</strong> 011 4452-xxxx</p>
       <p><strong>Horario:</strong> Abre a las 9 a.m. Cierra a las 9:30 p.m.</p>
